@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    color : white;
+
+    font-size: 14px;
+}
+.page {
+    justify-content: center;
+    margin:45px 380px ;
+}
+
+.images {
+    display:inline-block;
+
+    height: 581.15px;
+    float:left;
+}
+.form { 
+
+    margin-left:20px;
+    padding:55px 75px;
+
+    display:inline-block;
+
+    background-color: green;
+    
+    text-align: center;
+}
+input {
+    display:block;
+}
+hr {
+    display:inline-block;
+}
+.line {
+    display:inline-block;
+
+    border: 1px solid rgb(178, 178, 178);
+    width: 60px;
+    margin:10px;
+}
