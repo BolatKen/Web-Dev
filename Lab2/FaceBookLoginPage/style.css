@@ -95,5 +95,11 @@ hr {
 
 footer {
     background-color: white;
-    margin:0;
+    margin:0%;
+    display:block;
+    padding: 5px 80px;
+}
+footer a {
+    color: gray;
+    margin-left: 40px;
 }
