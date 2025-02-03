@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>ToDoList</title>
+    <meta lang="en">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p>ToDo List</p>
+    </header>
+
+    <div class="container">
+
+        <h1>To do List</h1>
+
+        <input id="newTask" type="text" placeholder="New Task">
+        <button type="submit">Add</button>
+
+        <div class="tasks">
+            <div class="task" id="1">
+                <input class="box" type="checkbox" onclick="taskDone(self);">
+                <span>First task</span> <button>trash icon</button>
+            </div>
+
+            <div class="task" id="2">
+                <input type="checkbox">
+                <span>Second task</span> <button>trash icon</button>
+            </div>
+
+            <div class="task" id="3">
+                <input type="checkbox">
+                <span>Third task</span> <button>trash icon</button>
+            </div>
+        </div>
+
+    </div>
+    <script scr="script.js"></script>
+
+</body>
+</html>

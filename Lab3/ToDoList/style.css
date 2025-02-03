@@ -1,0 +1,16 @@
+body {
+    background-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+header {
+    background-color: black;
+    color: rgb(203, 203, 203);
+    padding: 10px 60px;
+}
+
+.container {
+    justify-content: center;
+    margin: 10px 220px;
+}
