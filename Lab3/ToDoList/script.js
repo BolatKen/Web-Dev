@@ -13,6 +13,7 @@ function addTask() {
      
     document.getElementById("task-list").appendChild(li); 
     inputField.value = ""; 
+
 } 
  
 //When pressed checkbox(task is done)
