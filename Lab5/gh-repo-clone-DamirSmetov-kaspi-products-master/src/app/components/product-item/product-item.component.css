@@ -1,33 +1,10 @@
 /* src/app/products/products.component.css */
 
-
-
-
-
-h1 {
-  font-family:Verdana, sans-serif; 
-  text-align: center; 
-  font-size: 60px;
-
-  background-color: black;
-  color: white;
-  border-radius: 6px;
-}
-
-.products-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px;
-
-    font-family: Verdana, sans-serif;
-  }
-
-  
-  .product-card {
+ 
+.product-card {
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: 250px;
+    width: 300px;
     margin: 15px;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -36,19 +13,12 @@ h1 {
   
   .product-card h2 {
     margin-top: 10px;
-    font-size: 1.5em;
-
-    width: 260px; /* Ограничение ширины */
-    white-space: nowrap; /* Запрет на перенос строк */
-    overflow: hidden; /* Скрытие лишнего текста */
-    text-overflow: ellipsis; /* Добавление троеточия */
-
+    font-size: 1.3em;
   }
   
   .product-card p {
     margin: 5px 0;
     height: 40px;
-    overflow:auto;
   }
   
   .main-image {
@@ -62,17 +32,18 @@ h1 {
     display: flex;
     gap: 5px;
     margin-top: 10px;
+    justify-content: space-between;
   }
   
   .gallery-item img {
-    width: 80px;
+    width: 50px;
     height: 80px;
     object-fit: scale-down;
     border-radius: 4px;
   }
 
   img.gallery-item{
-    width: 80px;
+    width: 50px;
     height: 80px;
     object-fit: cover;
     border-radius: 4px;

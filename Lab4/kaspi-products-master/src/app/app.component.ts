@@ -3,9 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/products/header.component';
 import { NgFor } from '@angular/common';
 
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent],
+  imports: [HeaderComponent, NavBarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
