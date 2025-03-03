@@ -22,4 +22,9 @@ d-flex{
     margin: 0 auto;
 }
 
+.list-group-item {
+    font-size: 150%;
+    padding : 10px;
+}
+
 
