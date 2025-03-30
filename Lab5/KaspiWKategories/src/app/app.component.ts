@@ -14,7 +14,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
-  categories = ['Apple', 'Samsung', 'Xiaomi', 'Google', 'Liked', 'hui'];
+  categories = ['Apple', 'Samsung', 'Xiaomi', 'Google', 'Liked'];
 
   products: {
     id: number;
