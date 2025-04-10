@@ -2,6 +2,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .models import Companies, Vacancies
 from .serializers import CompanySerializer, VacancySerializer
+from rest_framework import status
 
 @api_view(['GET'])
 def company_list(request):
@@ -32,3 +33,11 @@ def vacancy_detail(request, id):
 def top_ten_vacancies(request):
     top_vacancies = Vacancies.objects.order_by('-salary')[:10]
     return Response(VacancySerializer(top_vacancies, many=True).data)
+
+
+@api_view(['POST'])
+def create_new_vacancy(request):
+    serializer = VacancySerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
